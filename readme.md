@@ -105,7 +105,7 @@ cd ~/llamaindex_demo/
 python llamaindex_internlm.py
 ```
 
-![.](.\image-lx\4.png)
+![](./image-lx/4.png)
 
 我们发现internlm2-chat-1_8b模型并不知道xtuner具体是什么，回答也是基于已经训练的知识库的内容去描述，并没有达到我们想要的效果，接下来就结合RAG的方式来查看效果。
 
@@ -181,7 +181,7 @@ python llamaindex_RAG.py
 
 运行结果如下：
 
-![.](.\image-lx\5.png)
+![](./image-lx/5.png)
 
 ##  LlamaIndex web
 
@@ -276,7 +276,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
 
 接下来我们使用streamlit框架快速构建一个web应用，然后本地win+r执行`ssh -CNg -L 8501:127.0.0.1:8501 root@ssh.intern-ai.org.cn -p 44415`，这里44415是我的开发机ssh端口号，请修改为你自己InternStudio上面SSH连接的端口号即可。如下图显示
 
-![.](.\image-lx\6.png)
+![](./image-lx/6.png)
 
 ## 总结
 
